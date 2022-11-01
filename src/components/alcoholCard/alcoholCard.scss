@@ -1,0 +1,37 @@
+@import '../../styles/font.scss';
+
+.alcoholContainer {
+  padding: 1.5em 0;
+  margin: .3em auto;
+  width: 90%;
+  
+  .nameContainer {
+    padding: .3em;
+    
+    .name {
+      @include mainFont;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+      border-bottom: 1px solid rgba(255,255,255,1);
+      transition: .3s;
+      padding-left: 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 3.5rem;
+      }
+
+      &:hover {
+        border-bottom: 1px solid rgba(0,0,0,.6);
+        padding-left: .3em;
+        font-weight: 600;
+      }
+
+      .linkTag {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}
